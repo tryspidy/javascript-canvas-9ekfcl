@@ -1,0 +1,17 @@
+<canvas id="canvas"></canvas>
+<script>
+
+	var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+  
+	ctx.beginPath();
+	ctx.rect(x, y, width, height);
+  	ctx.fillStyle = 'limegreen';
+  	ctx.fill();
+  
+  	ctx.beginPath();
+  	ctx.arc(x, y, radius, startAngle, endAngle, counterClockWise(optional));
+  	ctx.strokeStyle = 'black';
+  	ctx.stroke();
+
+</script>
